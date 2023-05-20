@@ -1,0 +1,77 @@
+.contenedor
+    height: 100%
+    width: 100%
+    background-color: #000
+    &.active
+        animation: opacar 0.4s ease-in forwards
+    .bloqueSuperior
+        width: 100%
+        height: 50%
+        background-color: #FE0000
+        box-sizing: border-box
+        position: relative
+        border-bottom: 12px solid #000
+        z-index: 2
+        &.active
+            animation: esconderSuperior 0.4s ease-in forwards
+    
+        .pokeboll
+            position: absolute
+            bottom: -56%
+            left: 50%
+            transform: translate(-50%, -50%)
+            height: 100px
+            width: 100px
+            background-color: #fff
+            border-radius: 50%
+            border: 20px solid #000
+            cursor: pointer
+            &::before
+                content: ''
+                cursor: pointer
+                position: absolute
+                bottom: -18%
+                left: 50%
+                transform: translate(-50%, -50%)
+                height: 60px
+                width: 60px
+                background-color: #fff
+                border-radius: 50%
+                border: 4px solid #000
+                box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.5), -4px 0px 8px rgba(255, 255, 255, 0.5)
+            &:hover
+                background-color: rgb(100, 249, 25)
+                    
+    .bloqueInferior
+        box-sizing: border-box
+        border-top: 12px solid #000
+        width: 100%
+        height: 50%
+        background-color: #fff
+        position: relative
+        &.active
+            animation: esconderInferior 0.4s ease-in forwards
+       
+
+@keyframes esconderSuperior
+  from 
+    top: 0
+  to 
+    top: -50%
+
+@keyframes esconderInferior 
+  from 
+    bottom: 0
+  to 
+    bottom: -50%
+
+@keyframes subirPokebola 
+  from 
+    bottom: -50%
+  to 
+    bottom: 0%
+@keyframes opacar 
+  0% 
+    opacity: 1
+  100% 
+    opacity: 0

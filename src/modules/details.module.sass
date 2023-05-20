@@ -1,0 +1,119 @@
+$color-fondo: white
+.fondo
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    background-color: $color-fondo
+    background: $color-fondo
+    background: linear-gradient(150deg, rgba(#00C3E3, .2) 0%, rgba(#00C3E3, 1) 100%)
+    position: relative
+    .actions
+        width: 90%
+        height: 6%
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 2px 0
+        margin-top: 2px
+        bottom: 30px
+        right: 30px
+        position: absolute
+        z-index: 1
+    .pokeFondo
+        position: absolute
+        width: 14%
+        height: 10%
+        margin: auto
+        top: 8%
+        right: 0
+        opacity: .3
+        background-repeat: no-repeat
+        background-image: url('../assets/pokebola2.svg')     
+    .estadisticas
+        display: flex
+        flex-direction: column
+        justify-items: center
+        align-items: center
+        height: 100%
+        width: 50%
+        user-select: none
+        .radar
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 50%
+            width: 100%
+            padding: 30px
+            padding-left: 35px
+
+        .otrasStats
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            height: 50%
+            width: 100%
+            .contenido
+                margin-left: 25%
+                margin-right: 15%
+                margin-top: 1.5%
+                margin-bottom: 1.5%
+                width: 100%
+                display: flex
+                flex-direction: row
+                align-items: center
+                user-select: none
+                .titulo
+                    text-align: start
+                    width: 20%
+                    font-weight: 600
+                    color: #fff
+                    margin: 0
+                    opacity: .8
+                .texto, .loading
+                    text-align: start
+                    width: 65%
+                    font-weight: 500
+                    color: #324145
+                    margin: 0
+                    font-size: .8rem
+
+
+    .presentacion
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        width: 50%
+        position: relative
+        .id
+            position: absolute
+            font-size: 5.5rem
+            font-weight: 600
+            color: #fff
+            opacity: .3
+            z-index: 0
+            bottom: 32%
+            right: 10%
+        .imagen
+            position: absolute
+            z-index: 1
+            height: 100%
+            width: auto
+            max-width: 400px
+            transform: scale(.8)
+            animation: fadeInScale .6s ease-in forwards
+            display: flex
+            justify-content: center
+            align-items: center
+@keyframes fadeInScale 
+  0%
+    opacity: 0
+    transform: scale(0.3)
+  100% 
+    opacity: 1
+    transform: scale(.8)
+

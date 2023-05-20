@@ -1,0 +1,56 @@
+$color-fondo: white
+.fondo
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $color-fondo
+    background: $color-fondo
+    background: linear-gradient(150deg, rgba(#EC8FE6, .6) 0%, rgba(#EC8FE6, 1) 100%)
+    position: relative
+    &::after
+        content: '404'
+        font-size: 14rem
+        z-index: 0
+        color: red
+        position: absolute
+        color: #fff
+        opacity: .3
+        font-weight: 600
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    .pokemonParther
+        position: absolute
+        width: 200px
+        height: 60%
+        top: 70%
+        left: 50%
+        transform: translate(-50%, -50%)
+        opacity: 1
+        z-index: 1
+        background-repeat: no-repeat
+        background-image: url('../assets/ohno.svg')    
+    .pokelogo
+        position: absolute
+        width: 50%
+        height: 50%
+        top: 5%
+        left: 88%
+        opacity: .3
+        background-repeat: no-repeat
+        background-image: url('../assets/pokebola2.svg')
+    .actions
+        width: 90%
+        height: 6%
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 2px 0
+        margin-top: 2px
+        bottom: 30px
+        right: 30px
+        position: absolute
+        z-index: 1

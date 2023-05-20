@@ -1,0 +1,35 @@
+$color-fondo: white
+.fondo
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: $color-fondo
+    background: $color-fondo
+    background: linear-gradient(150deg, rgba(#00C3E3, .2) 0%, rgba(#00C3E3, 1) 100%)
+    position: relative
+    .pokeFondo
+        position: absolute
+        width: 50%
+        height: 50%
+        bottom: 0
+        left: 0
+        opacity: .3
+        background-repeat: no-repeat
+        background-image: url('../assets/pokeFondo.svg')            
+    .navBar
+        height: 10%
+        width: 90%
+
+    .groupCards
+        z-index: 1
+        height: 80%
+        width: 90%
+        overflow: hidden
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+    
